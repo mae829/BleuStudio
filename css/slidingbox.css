@@ -1,0 +1,26 @@
+.boxgrid{ 
+	width: 640px; 
+	height: 265px; 
+	float:left; 
+	background:#161613; 
+	border: solid 5px #ffffff; 
+	overflow: hidden; 
+	position: relative;
+	margin-bottom:10px;
+}
+.boxgrid img.cover{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	border: 0; 
+}
+#main .boxgrid h2{
+	clear:inherit;
+	border-bottom:none;
+	margin-left:10px;
+	margin-top:5px;
+	max-width:300px;
+}
+.boxgrid p{ 
+	padding: 0 20px; 
+}

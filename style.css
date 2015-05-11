@@ -1,0 +1,602 @@
+/*
+Theme Name: Bleu Studio
+Theme URI: http://bleucellar.com/portfolio/wp-themes/bleu-studio/
+Description: Wordpress theme design for Bleu Cellar
+Author: Miguel Estrada
+Author URI: http://bleucellar.com/
+Version: 1.0
+Tags: blue, portfolio, design
+*/
+
+/* RESET STYLINGS */
+html, body, div, div div, span, object, 
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, em, font, img, strong {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-size:inherit;
+	font-weight:normal;
+	text-decoration:none;
+	text-align:left;
+}
+ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+/****************************************/
+/*            GLOBAL STYLING            */
+/****************************************/
+body{
+	background:						url('images/body-bckgrnd.jpg') repeat-x #000000;
+	font-size:						14px;
+	font-family:					'Futura LT Medium', Futura, 'Century Gothic', AppleGothic, 'Trebuchet MS', Trebuchet, Tahoma, Arial, sans-serif;
+	color:							#fff;
+	letter-spacing:					0.10em;
+}
+a{
+	color:							#00b0ff;
+	text-decoration:				none;
+}
+a:hover{
+	text-decoration:				underline;
+}
+h2, h5, h6{
+	color:							#00b0ff;
+	margin-bottom:					15px;
+	border-bottom:					4px dotted #ffffff;
+	font-size:						24px;
+	font-weight:					normal;
+}
+h3{
+	font-size:						30px;
+	padding-bottom:					20px;
+}
+h6{
+	font-size:						20px;
+}
+span.blue{
+	color:							#00b0ff;
+}
+.alignright{
+	float:							right;
+}
+.alignleft{
+	float:							left;
+}
+/****************************************/
+/*            HEADER STYLING            */
+/****************************************/
+#header{
+	width:							980px;
+	margin:							0 auto;
+	overflow:						hidden;
+	font-size:						20px;
+	font-family:					'Trebuchet MS', Trebuchet, Tahoma, Arial, sans-serif;
+	letter-spacing:					0;
+}
+	#header h1 {
+		background:					url('images/logo.jpg') no-repeat;
+		width:						410px;
+		height:						200px;
+		text-indent:				-9999px;
+		float:						left;
+		position:					relative;
+	}
+		#header h1 a {
+			width:						410px;
+			height:						200px;
+			display:					block;
+		}
+	/* NAVIGATION */
+	#header ul {
+		float:right;
+		overflow:hidden;
+		position:relative;
+		margin-top:30px;
+	}
+		#header ul li{
+			display:inline;
+			padding-left:20px;
+		}
+			#header ul li a{
+				background-color:#262626;
+				padding:15px 15px;
+				line-height:40px;
+			}
+			#header ul li a:hover{
+				background-color:#bbbbbb;
+				color:#262626;
+				text-decoration:none;
+			}
+			#header ul li.current_page_item a{
+				background-color:#00b0ff;
+				color:#262626;
+			}
+	/* SLOGAN */
+	#header p{
+		float:right;
+		position:relative;
+		top:50px;
+	}
+
+/****************************************/
+/*           CONTENT STYLING            */
+/****************************************/
+/* front page */
+#content{
+	clear:both;
+	overflow:hidden;
+	background:url('images/content-bckgrnd.jpg') no-repeat top center ;
+	padding:20px 0;
+}
+#content-wrapper{
+	width:980px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#main{
+	overflow:hidden;
+	float:left;
+	width:710px;
+}
+	#main h5{
+		max-width:90px;
+	}
+	#main ul{
+		margin:10px 0 20px 20px;
+	}
+#services-col1{
+	float:left;
+	width:242px;
+	background:url('images/browsers.png') no-repeat;
+	margin-right:20px;
+	padding-left:135px;
+}
+#services-col2{
+	float:right;
+	background:url('images/iphone-ms.png') no-repeat;
+	padding-left:75px;
+}
+	#services-col1 ul,#services-col2 ul{
+		list-style:disc;
+	}
+	/* portfolio listing page */
+	#content-wrapper .work{
+		overflow:hidden;
+		position:relative;
+		padding-bottom:20px;
+		margin-bottom:20px;
+		border-bottom:1px solid #bbbbbb;
+	}
+		#content-wrapper .work img{
+			border:solid 5px #ffffff;
+			float:left;
+		}
+		#content-wrapper .work img:hover{
+			border-color:#00b0ff;
+		}
+		#content-wrapper .work .work-desc{
+			float:right;
+			width:250px;
+		}
+		#content-wrapper .work .search{
+			margin-top:20px;
+		}
+		#content-wrapper .work .work-desc h2{
+			margin-top:30px;
+		}
+/* portfolio - single */
+	#content-wrapper #main .work-desc{
+		float:left;
+		width:380px;
+		margin-left:10px;
+	}
+		#content-wrapper #main .work-desc h2{
+			max-width:none;
+		}
+.proj-desc p{
+	margin-bottom:15px;
+}
+.work-desc ul{
+	list-style:disc;
+}
+.work #displayDiv img:hover{
+	border-color:#ffffff;
+}
+#thumbnailDiv{
+	float:right;
+	margin:60px 0 0 20px;
+	width:260px;
+}
+	#thumbnailDiv img{
+		margin-left:10px;
+		margin-bottom:10px;
+	}
+/* blog listing page */
+.post-item{
+	margin-bottom:35px;
+	padding-bottom:15px;
+	border-bottom:1px solid #bbbbbb;
+}
+	.post-item h2{
+		border:none;
+	}
+#main .post-item ul.meta{
+	margin:0 0 25px 0;
+	padding:0;
+}
+.post-item ul.meta li{
+	display:inline;
+	margin-right:10px;
+	margin-left:0px;
+}
+.post-item ul li{
+	list-style:disc;
+	margin-left:20px;
+}
+.post-item p{
+	margin-left:20px;
+}
+div.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+.post-item img.artist{
+	float:left;
+	margin-right:20px;
+}
+.post-item .artist-meta p{
+	margin-bottom:10px;
+}
+.post-item .artist-desc{
+	clear:both;
+	float:none;
+	margin-top:75px;
+}
+.post-item .artist-desc p{
+	margin-top:15px;
+}
+/* comment styling */
+#comments_template{
+	font-size:14px;
+}
+h3#comments{
+	font-size:20px;
+}
+.commentlist li .avatar{ 
+	float: right;
+}
+.commentlist cite{
+	font-weight: bold;
+	font-size: 18px;
+}
+.commentlist li{
+	margin: 15px 0 10px;
+	padding: 10px;
+	list-style: none;
+}
+li.comment{
+	border:1px solid #bbbbbb;
+}
+li.comment p{
+	margin:10px 0 0 10px;
+}
+div.comment-meta{
+	font-size:12px;
+}
+.nocomments{
+	text-align:center;
+	margin:0;
+	padding:0;
+}
+/* comment form */
+#respond h4{
+	clear: both;
+	margin: 45px 0 10px 0;
+	font-size:30px;
+}
+form p{
+	padding-bottom: 10px;
+	margin: 5px 0;
+}
+form p label{
+	display: inline-block;
+	margin-right: 10px;
+	text-align: right;
+}
+form p label[for="comment"]{
+	vertical-align: top;
+}
+input, textarea{
+	padding: 3px;
+}
+textarea{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	overflow: auto;
+}
+#respond input#submit{
+	padding: 5px 3px;
+}
+#respond input#submit{
+	color:#171717;
+}
+#respond #submit:hover{
+	color:#00b0ff;
+}
+/* artists page */
+#main .artistBox{
+	position:relative;
+	width:320px;
+	height:320px;
+	float:left;
+	background-color:#171717;
+	padding:10px;
+	margin:0 15px 15px 0;
+}
+.artistBox img.artist{
+	float:left;
+	margin-right:15px;
+	margin-bottom:15px;
+	width:142px;
+	height:142px;
+	background-color:#ffffff;
+}
+.artistBox .artist-meta p{
+	margin-bottom:10px;
+	text-align:center;
+}
+.artistBox .artist-desc img{
+	padding-left:10px;
+	margin-bottom:-2px;
+}
+.artistBox .artist-desc a{
+	display:block;
+	margin-bottom:5px;
+}
+div.artist-desc{
+	float:left;
+	margin-left:10px;
+}
+.artistBox a.continue{
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+/* contact page styling */
+.contactColumn{
+	width:240px;
+	float:left;
+	padding-bottom:35px;
+}
+.contactColumn h2{
+	max-width:100%; /*fix for Opera*/
+}
+#social-sites{
+	margin-top:35px;
+}
+#social-sites img{
+	float:left;
+	margin-top:30px;
+	margin-left:35px;
+	border:2px solid #bbbbbb;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+#social-sites img:hover{
+	border:2px solid #00b0ff;
+	border-radius:6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+}
+#contact-wrapper{
+	width:400px;
+	padding:30px 20px 20px 35px;
+	float:right;
+}
+#contact-wrapper p{
+	margin-bottom:15px;
+}
+#contact-wrapper input[type=text], #contact-wrapper textarea{
+	margin-bottom:15px;
+	width:200px;
+}
+label { 
+	display: inline-block; 
+	float: left; 
+	height: 26px; 
+	line-height: 26px; 
+	width: 155px; 
+}
+input, textarea, select { 
+	margin: 0; 
+	padding: 5px; 
+	color:#000000; 
+	background: #f5f5f5; 
+	border: 1px solid #ccc; 
+	margin: 5px 0; 
+	font:"Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius:5px; 
+}   
+input:focus, textarea:focus, select:focus { 
+	border: 1px solid #999; 
+	background-color: #ffffff; 
+	color:#000000;
+}
+input.submit { 
+	cursor: pointer; 
+	border: 1px solid #222222; 
+	background:#262626; 
+	color:#ffffff; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius:5px;
+}
+input.submit:hover { 
+	background:#444444; 
+}
+span.required{
+	font-size: 13px; 
+	color: #ff0000;
+}
+/* SEARCH PAGE STYLING */
+.artistBox-search{
+	position:relative;
+	float:left;
+	border-bottom:1px solid #bbbbbb;
+	margin-bottom:35px;
+	padding-bottom:35px;
+}
+.artistBox-search h2{
+	border:none;
+}
+.artistBox-search img.artist{
+	float:left;
+	margin-right:15px;
+	margin-bottom:15px;
+	width:142px;
+	height:142px;
+	background-color:#ffffff;
+}
+.artistBox-search .artist-meta p{
+	margin-bottom:10px;
+}
+.artistBox-search a.continue{
+	position:absolute;
+	bottom:10px;
+}
+
+/* SIDEBAR */
+#sideBar{
+	float:right;
+	display:block;
+	width:240px;
+}
+#pitch p{
+	text-indent:15px;
+	line-height:1.4em;
+}
+.widget{
+	margin-bottom:40px;
+}
+.widget ul li{
+	margin-bottom:5px;
+}
+.widget ul li a{
+	color:#bbbbbb;
+}
+.widget ul li a:hover{
+	color:#00b0ff;
+}
+li.cat-item ul.children{
+	list-style:circle;
+	margin-left:20px;
+	margin-top:5px;
+}
+/* sidebar searchform */
+#sideBar li.widget_search{
+    margin-bottom:25px;
+}
+.hidden{
+	display:none;
+}
+#sideBar li.widget_search form #s{
+    padding:7px 29px 7px 7px;
+    width:200px;
+    background:url("images/search.png") no-repeat right #f6f6ec;
+    border:2px solid #bbbbbb;
+}
+#sideBar li.widget_search form #searchsubmit{
+    display:none;
+}
+/* twitter widget */
+li.widget_twitter{
+	background:url("images/twitter-bird.png") no-repeat bottom right;
+	height:350px;
+}
+ul.twitter{
+	list-style:disc;
+	margin-left:15px;
+}
+ul.twitter li{
+	margin-bottom:5px;
+}
+/****************************************/
+/*            FOOTER STYLING            */
+/****************************************/
+#footer{
+	background-color:#171717;
+	overflow:hidden;
+	padding:20px 0;
+	border-top:solid 1px #3c3c3c;
+}
+#footer-wrapper{
+	width:980px;
+	margin:0 auto;
+}
+	#footer-wrapper .col1{
+		position:relative;
+		float:left;
+		display:block;
+		width:390px;
+		margin-right:20px;
+	}
+		#footer-wrapper .col1 h1{
+			background: url('images/logo-footer.jpg') no-repeat;
+			width: 179px;
+			height: 79px;
+			text-indent: -9999px;
+			position:relative;
+			margin-bottom:15px;
+		}
+			#footer-wrapper .col1 h1 a{
+				width: 150px;
+				height: 79px;
+				display: block;
+			}
+		#footer-wrapper .col1 ul li{
+			display:inline;
+			padding-right:7px;
+			padding-left:7px;
+			border-right: 1px solid #ffffff;
+		}
+		#footer-wrapper .col1 ul li:first-child{
+			padding-left:0;
+		}
+		#footer-wrapper .col1 ul li:last-child{
+			border-right:none;
+		}
+	#footer-wrapper .col2{
+		float:left;
+		display:block;
+		width:300px;
+		margin-right:20px;
+	}
+		#footer-wrapper .col2 li{
+			list-style:disc;
+			margin-left:15px;
+		}
+			#footer-wrapper .col2 ul li a{
+				color:#bbbbbb;
+			}
+			#footer-wrapper .col2 ul li a:hover{
+				color:#00b0ff;
+			}
+	#footer-wrapper .col3{
+		text-align:right;
+	}
+		#footer-wrapper .col3 p{
+			text-align:right;
+		}
+		
+/****************************************/
+/*             MISC. STYLING            */
+/****************************************/
+#hint{
+	margin-bottom:						20px;
+}
